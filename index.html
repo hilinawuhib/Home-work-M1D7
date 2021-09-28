@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* css  */
+      body {
+        background-color: rgb(196, 181, 181);
+      }
+      h1 {
+        margin-top: 20px;
+        background-color: transparent;
+        text-align: center;
+        font-style: italic;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      td,
+      th,
+      tr {
+        text-align: left;
+        padding: 40px;
+        background-color: transparent;
+        border-bottom: 2px solid #ddd;
+        height: 10px;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      textarea {
+        margin-top: 20px;
+        height: fit-content;
+        width: fit-content;
+      }
+      .center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .toggledcss {
+        width: 200px;
+        height: 200px;
+      }
+      button {
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body id="bodyid">
+    <h1 id="h1id">Watch Store</h1>
+    <button id="changingh1" onclick="changeh1()">change h1</button>
+    <button id="changing back ground color" onclick="changeBackgroundColor()">
+      change background-color
+    </button>
+    <button id="changing  to fake address" onclick="changetofakeAddress()">
+      change to fake Address
+    </button>
+    <!-- <button id="changingCssoflinks" onclick="changeCssoflinks()">
+      change css of links
+    </button>
+
+    <button onclick="toggledcss()">toggle css</button>
+
+    <button id="colortheprice" onclick="colortheprice()">
+      color the Price
+    </button> -->
+
+    <table class="center">
+      <tr>
+        <th>Image</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Amazon Link</th>
+      </tr>
+      <tr>
+        <td>
+          <img
+            id="imageid"
+            src="https://m.media-amazon.com/images/I/71ehLu-G3jL._AC_UX679_.jpg"
+            alt="watch1"
+          />
+        </td>
+        <td>Benyar Fashion Men's Quartz Design Watch</td>
+        <td>Trendy and stylish Men Watch</td>
+        <td>41.99€</td>
+        <td>
+          <a
+            href="https://www.amazon.de/-/en/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A04240203HFPLTIPXFHVH&url=%2FFashion-Chronograph-Waterproof-Stainless-Business%2Fdp%2FB07WGBPP68%2Fref%3Dsr_1_4_sspa%3Fadgrpid%3D108070228507%26dchild%3D1%26gclid%3DEAIaIQobChMI3qLqmI248gIVkLh3Ch2awgtvEAAYASAAEgI3OvD_BwE%26hvadid%3D451191405004%26hvdev%3Dc%26hvlocphy%3D1008232%26hvnetw%3Dg%26hvqmt%3Db%26hvrand%3D9627380799588208332%26hvtargid%3Dkwd-12478476%26hydadcr%3D12751_2036790%26keywords%3Dherrenuhren%26qid%3D1629206906%26sr%3D8-4-spons%26psc%3D1&qualifier=1629206906&id=7220327561914502&widgetName=sp_atf"
+          >
+            Link</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            id="imageid"
+            src="https://m.media-amazon.com/images/I/71OneZBNREL._AC_UX679_.jpg"
+            alt="watch2"
+          />
+        </td>
+        <td>Benyar Men's Watch, 30 m Waterproof</td>
+        <td>Stylish and waterproof Men Watch</td>
+        <td>42.99€</td>
+        <td>
+          <a
+            href="https://aax-eu.amazon.de/x/c/QgyixMfwm6vZpT4B3JfV4Q0AAAF7VEyIMQMAAAH2AUZ8mgQ/https://www.amazon.de/gp/aw/d/B07DGXFD7N/?_encoding=UTF8&pd_rd_plhdr=t&aaxitk=6051a589c6e3f60799f903e2364966ae&hsa_cr_id=6858092090102&ref_=sbx_be_s_sparkle_mcd_asin_0_img&pd_rd_w=m4iac&pf_rd_p=125bd14d-2b7b-4ce1-8d1e-71dafc50474f&pd_rd_wg=WeZVP&pf_rd_r=66RAXVYVTGFB6GRNAAK0&pd_rd_r=d6f459a8-8e73-4cf1-81be-4e850212b7ef"
+          >
+            Link</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            id="imageid"
+            src="https://m.media-amazon.com/images/I/61VoyE+cy4L._AC_UX679_.jpg"
+            alt="watch3"
+          />
+        </td>
+        <td>Nordgreen Pioneer Scandinavian Men's Watch in Silver</td>
+        <td>Classy and stylish Men Watch</td>
+        <td>234.00€</td>
+        <td>
+          <a
+            href="https://www.amazon.de/-/en/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A021752910UQ1V4PQSZR1&url=%2FNordgreen-Pioneer-Scandinavian-Interchangeable-Silicone%2Fdp%2FB07YFTQ2HY%2Fref%3Dsr_1_1_sspa%3Fadgrpid%3D108070228507%26dchild%3D1%26gclid%3DEAIaIQobChMI3qLqmI248gIVkLh3Ch2awgtvEAAYASAAEgI3OvD_BwE%26hvadid%3D451191405004%26hvdev%3Dc%26hvlocphy%3D1008232%26hvnetw%3Dg%26hvqmt%3Db%26hvrand%3D9627380799588208332%26hvtargid%3Dkwd-12478476%26hydadcr%3D12751_2036790%26keywords%3Dherrenuhren%26qid%3D1629206906%26sr%3D8-1-spons%26psc%3D1&qualifier=1629206906&id=7220327561914502&widgetName=sp_atf"
+            >Link</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            id="imageid"
+            src="https://m.media-amazon.com/images/I/71UOB1CNCDL._AC_UX679_.jpg"
+            alt="watch4"
+          />
+        </td>
+        <td>Benyar Men's Watch, Chronograph, Analogue Quartz Watch</td>
+        <td>Stylish Men Watch</td>
+        <td>42.99€</td>
+        <td>
+          <a
+            href="https://www.amazon.de/-/en/gp/slredirect/picassoRedirect.html/ref=pa_sp_atf_aps_sr_pg1_1?ie=UTF8&adId=A1015032URZ8DYOL3SXD&url=%2FChronograph-Analogue-Business-Waterproof-Bracelet%2Fdp%2FB07SJFVNL2%2Fref%3Dsr_1_2_sspa%3Fadgrpid%3D108070228507%26dchild%3D1%26gclid%3DEAIaIQobChMI3qLqmI248gIVkLh3Ch2awgtvEAAYASAAEgI3OvD_BwE%26hvadid%3D451191405004%26hvdev%3Dc%26hvlocphy%3D1008232%26hvnetw%3Dg%26hvqmt%3Db%26hvrand%3D9627380799588208332%26hvtargid%3Dkwd-12478476%26hydadcr%3D12751_2036790%26keywords%3Dherrenuhren%26qid%3D1629206906%26sr%3D8-2-spons%26psc%3D1&qualifier=1629206906&id=7220327561914502&widgetName=sp_atf"
+          >
+            Link</a
+          >
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img
+            id="imageid"
+            src="https://m.media-amazon.com/images/I/91NIn9qP-rL._AC_UX679_.jpg"
+            alt=""
+          />
+        </td>
+        <td>Fossil Men’s Chronograph Quartz Watch</td>
+        <td>water resistant Men watch</td>
+        <td>128.28€</td>
+        <td>
+          <a
+            href="https://www.amazon.de/-/en/Fossil-Chronograph-Quartz-Watch-black/dp/B01LXC3O6N/ref=sr_1_6?adgrpid=108070228507&dchild=1&gclid=EAIaIQobChMI3qLqmI248gIVkLh3Ch2awgtvEAAYASAAEgI3OvD_BwE&hvadid=451191405004&hvdev=c&hvlocphy=1008232&hvnetw=g&hvqmt=b&hvrand=9627380799588208332&hvtargid=kwd-12478476&hydadcr=12751_2036790&keywords=herrenuhren&qid=1629206906&sr=8-6"
+          >
+            Link</a
+          >
+        </td>
+      </tr>
+    </table>
+    <textarea name="comment" id="text" cols="30" rows="10"></textarea>
+    <footer>
+      <div>The watch shop</div>
+      <div>2408 Pyramid Valley Road,Amber, Iowa</div>
+    </footer>
+    <script>
+      function changeh1() {
+        document.getElementById("h1id").innerHTML = "content changed";
+      }
+      function changeBackgroundColor() {
+        document.getElementById("bodyid").style.backgroundColor = "white";
+      }
+
+      function changetofakeAddress() {
+        document.querySelector("footer >div:nth-child(2)").innerHTML =
+          "19 Newmarket Road,HAYNES,MK45 6NJ ";
+      }
+
+      function toogleCss() {
+        let element = document.getElementById("imageid");
+        element.classList.toggle("toogledcss");
+      }
+
+      
+    </script>
+  </body>
+</html>
